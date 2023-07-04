@@ -12,7 +12,7 @@ const Navbar = ({ isOpen, toggleMenu }: NavbarProps) => {
       <div>
         <img src={Logo} style={{ width: "85px", height: "auto" }} alt="Logo" />
       </div>
-      <Hamburger toggled={isOpen} toggle={toggleMenu} />
+      <Hamburger toggled={isOpen} toggle={toggleMenu} color="#FFDB58" />
     </div>
   );
 };

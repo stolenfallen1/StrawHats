@@ -25,23 +25,22 @@ const Home = () => {
         />
         {isOpen && (
           <div
-            className="fixed top-12 left-0 w-full h-full bg-black z-10"
-            style={{
-              top: "12vh",
-            }}
+            className="fixed inset-0 bg-black z-50"
+            style={{ backgroundColor: "rgba(0, 0, 0, 0.85)" }}
+            onClick={toggleMenu}
           >
             <div className="flex flex-col justify-center h-full text-xl tracking-tight">
-              <button className="text-white font-bold text-3xl">
+              <button className="text-white font-bold text-4xl py-2 hover:opacity-80">
                 <Link to="/" onClick={toggleMenu}>
                   Home
                 </Link>
               </button>
-              <button className="text-white font-bold text-3xl">
+              <button className="text-white font-bold text-4xl py-2 hover:opacity-80">
                 <Link to="/characters" onClick={toggleMenu}>
                   Characters
                 </Link>
               </button>
-              <button className="text-white font-bold text-3xl">
+              <button className="text-white font-bold text-4xl py-2 hover:opacity-80">
                 <Link to="/forum" onClick={toggleMenu}>
                   Forum
                 </Link>
