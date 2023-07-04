@@ -21,26 +21,39 @@ const Home = () => {
           src={HomeWallpaper}
           className="absolute inset-0 w-full object-cover"
           style={{ height: "88vh" }}
+          alt="Home Wallpaper"
         />
         {isOpen && (
-          <div className="fixed top-0 left-0 w-full h-full bg-white">
-            <div className="flex flex-col items-center justify-center h-full text-xl font-medium tracking-tight">
-              <Link to="/" onClick={toggleMenu}>
-                Home
-              </Link>
-              <Link to="/characters" onClick={toggleMenu}>
-                Characters
-              </Link>
-              <Link to="/forum" onClick={toggleMenu}>
-                Forum
-              </Link>
+          <div
+            className="fixed top-12 left-0 w-full h-full bg-black z-10"
+            style={{
+              top: "12vh",
+            }}
+          >
+            <div className="flex flex-col justify-center h-full text-xl tracking-tight">
+              <button className="text-white font-bold text-3xl">
+                <Link to="/" onClick={toggleMenu}>
+                  Home
+                </Link>
+              </button>
+              <button className="text-white font-bold text-3xl">
+                <Link to="/characters" onClick={toggleMenu}>
+                  Characters
+                </Link>
+              </button>
+              <button className="text-white font-bold text-3xl">
+                <Link to="/forum" onClick={toggleMenu}>
+                  Forum
+                </Link>
+              </button>
             </div>
           </div>
         )}
         <div
           className="absolute inset-0 bg-gradient-to-t from-black/70 to-black/50 z-999"
           style={{ height: "88vh" }}
-        >
+        ></div>
+        <div className="absolute inset-0 z-100">
           <HomeContent />
         </div>
       </div>
