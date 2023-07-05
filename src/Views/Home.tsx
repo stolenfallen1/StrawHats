@@ -24,7 +24,7 @@ const Home = () => {
           alt="Home Wallpaper"
         />
         <div
-          className={`fixed inset-0 top-0 left-0 bg-black z-50 transition-transform ${
+          className={`fixed inset-0 top-0 left-0 bg-black z-50 transition-transform duration-700 ${
             isOpen ? "translate-y-0" : "translate-y-full"
           }`}
           style={{ backgroundColor: "rgba(0, 0, 0, 0.85)" }}
