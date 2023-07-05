@@ -6,7 +6,7 @@ const HomeContent = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsSmallScreen(window.innerWidth < 640);
+      setIsSmallScreen(window.innerWidth < 768);
     };
 
     handleResize();
@@ -19,10 +19,14 @@ const HomeContent = () => {
   }, []);
 
   return (
-    <div className="flex justify-end px-5 py-40">
+    <div
+      className={`px-5 py-40 ${
+        isSmallScreen ? "flex justify-center items-center" : "flex justify-end"
+      } `}
+    >
       {isSmallScreen ? (
-        <div className="flex-1">
-          <div className="w-[400px] mx-auto">
+        <div>
+          <div className="w-[400px] custom-400:w-[375px] custom-300:w-[300px] text-center">
             <h1 className="text-4xl text-custom-gold font-bold leading-normal">
               Embark on a Legendary Voyage: Uniting One Piece Enthusiasts
               Worldwide.
@@ -42,7 +46,7 @@ const HomeContent = () => {
       ) : (
         <>
           <div className="flex-1">
-            <div className="w-[400px] mx-auto">
+            <div className="lg:w-[400px] md:w-[300px] mx-auto">
               <h1 className="text-4xl text-custom-gold font-bold leading-normal">
                 Unveiling Legends, Unleashing Dreams: Dive into the World of One
                 Piece Characters.
@@ -56,7 +60,7 @@ const HomeContent = () => {
           </div>
           <div className="flex-1">
             <div className="text-right">
-              <div className="w-[400px] mx-auto text-right">
+              <div className="lg:w-[400px] md:w-[300px] mx-auto text-right">
                 <h1 className="text-4xl text-custom-gold font-bold leading-normal">
                   Embrace the Grand Line of Knowledge: Uniting One Piece Fans
                   Worldwide.
