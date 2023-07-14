@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import Navbar from "../Components/Navbar";
+import NavButtons from "../Components/NavButtons";
 import HomeContent from "../Components/HomeContent";
 import HomeWallpaper from "../Asset/HomeAssets/HomeWallpaper.jpeg";
 
@@ -30,23 +30,7 @@ const Home = () => {
           style={{ backgroundColor: "rgba(0, 0, 0, 0.85)" }}
           onClick={toggleMenu}
         >
-          <div className="flex flex-col justify-center h-full text-xl tracking-tight">
-            <button className="text-white font-bold text-4xl py-2 hover:opacity-80">
-              <Link to="/" onClick={toggleMenu}>
-                Home
-              </Link>
-            </button>
-            <button className="text-white font-bold text-4xl py-2 hover:opacity-80">
-              <Link to="/characters" onClick={toggleMenu}>
-                Characters
-              </Link>
-            </button>
-            <button className="text-white font-bold text-4xl py-2 hover:opacity-80">
-              <Link to="/forum" onClick={toggleMenu}>
-                Forum
-              </Link>
-            </button>
-          </div>
+          <NavButtons />
         </div>
         <div
           className="absolute inset-0 bg-gradient-to-t from-black/70 to-black/50 z-999"
