@@ -1,5 +1,11 @@
+import CharacterList from "../Components/CharacterList";
+
 const CharacterPage = () => {
-  return <div className="h-screen"></div>;
+  return (
+    <div>
+      <CharacterList />
+    </div>
+  );
 };
 
 export default CharacterPage;
