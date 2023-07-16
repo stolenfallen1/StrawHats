@@ -6,7 +6,8 @@ import usopp from "../Asset/CharacterAssets/usopp.png";
 import robin from "../Asset/CharacterAssets/robin.png";
 import chopper from "../Asset/CharacterAssets/chopper.png";
 import franky from "../Asset/CharacterAssets/franky.png";
-import jimbei from "../Asset/CharacterAssets/jimbei.png";
+import brook from "../Asset/CharacterAssets/brook.png";
+import jinbei from "../Asset/CharacterAssets/jinbei.png";
 
 export const characterArray = [
   {
@@ -58,8 +59,14 @@ export const characterArray = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem sunt quidem ipsam modi consectetur voluptatibus libero, architecto voluptates nulla quis!",
   },
   {
-    name: "Jimbei",
-    image: jimbei,
+    name: "Brook",
+    image: brook,
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem sunt quidem ipsam modi consectetur voluptatibus libero, architecto voluptates nulla quis!",
+  },
+  {
+    name: "Jinbei",
+    image: jinbei,
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem sunt quidem ipsam modi consectetur voluptatibus libero, architecto voluptates nulla quis!",
   },
