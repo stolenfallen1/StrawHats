@@ -15,7 +15,10 @@ const CharacterList = ({ index, image, description }: CharacterListProps) => {
         }`}
       >
         <img src={image} />
-        <p className="text-custom-gold text-xl" style={{ width: "500px" }}>
+        <p
+          className="text-custom-gold text-2xl font-bold leading-10"
+          style={{ width: "500px" }}
+        >
           {description}
         </p>
       </div>
