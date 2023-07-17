@@ -9,7 +9,7 @@ const ForumHeader = () => {
         src={ForumWallpaper}
         style={{ height: "45vh", width: "100%" }}
       />
-      <ForumHeaderLinks title="ONE PIECE" />
+      <ForumHeaderLinks title="NAKAMA's Forum" />
     </div>
   );
 };

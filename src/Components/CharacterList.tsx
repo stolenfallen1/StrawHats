@@ -22,7 +22,9 @@ const CharacterList = ({
       >
         <img src={image} />
         <div>
-          <h1 className="mb-5 text-white text-3xl font-extrabold">{name}</h1>
+          <h1 className="mb-5 text-white text-3xl font-extrabold italic">
+            {name}
+          </h1>
           <p
             className="text-custom-gold text-xl font-bold leading-10"
             style={{ width: "500px" }}

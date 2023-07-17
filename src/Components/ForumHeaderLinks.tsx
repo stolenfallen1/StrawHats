@@ -18,14 +18,20 @@ const ForumHeaderLinks = ({ title }: ForumHeaderLinksProps) => {
         width: "100%",
       }}
     >
-      <h1 className="text-5xl text-custom-gold text-center font-extrabold mb-3">
+      <h1 className="text-6xl text-custom-gold text-center font-extrabold mb-3">
         {title}
       </h1>
       <div>
-        <Link to="/" className="text-xl mx-4 text-white font-bold">
+        <Link
+          to="/"
+          className="text-2xl mx-4 text-white font-bold hover:text-custom-gold ease-in duration-300"
+        >
           HOME
         </Link>
-        <Link to="/characters" className="text-xl mx-4 text-white font-bold">
+        <Link
+          to="/characters"
+          className="text-2xl mx-4 text-white font-bold hover:text-custom-gold ease-in duration-300"
+        >
           CHARACTERS
         </Link>
       </div>
