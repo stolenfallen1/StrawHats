@@ -1,10 +1,16 @@
 interface CharacterListProps {
+  name: string;
   index: number;
   image?: string;
   description?: string;
 }
 
-const CharacterList = ({ index, image, description }: CharacterListProps) => {
+const CharacterList = ({
+  name,
+  index,
+  image,
+  description,
+}: CharacterListProps) => {
   const isReverse = index % 2 === 0;
 
   return (
@@ -15,12 +21,15 @@ const CharacterList = ({ index, image, description }: CharacterListProps) => {
         }`}
       >
         <img src={image} />
-        <p
-          className="text-custom-gold text-2xl font-bold leading-10"
-          style={{ width: "500px" }}
-        >
-          {description}
-        </p>
+        <div>
+          <h1 className="mb-5 text-white text-3xl font-extrabold">{name}</h1>
+          <p
+            className="text-custom-gold text-xl font-bold leading-10"
+            style={{ width: "500px" }}
+          >
+            {description}
+          </p>
+        </div>
       </div>
     </div>
   );

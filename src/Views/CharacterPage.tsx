@@ -6,6 +6,7 @@ const CharacterPage = () => {
     <div className="p-0 m-0 box-border bg-custom-red">
       {characterArray.map((character, index) => (
         <CharacterList
+          name={character.name}
           index={index}
           image={character.image}
           description={character.description}
