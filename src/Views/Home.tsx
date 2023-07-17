@@ -1,8 +1,8 @@
 import { useState } from "react";
+import HomeWallpaper from "../Asset/HomeAssets/HomeWallpaper.jpg";
 import Navbar from "../Components/Navbar";
 import NavButtons from "../Components/NavButtons";
 import HomeContent from "../Components/HomeContent";
-import HomeWallpaper from "../Asset/HomeAssets/HomeWallpaper.jpeg";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
