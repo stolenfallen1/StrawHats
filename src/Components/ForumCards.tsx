@@ -1,4 +1,10 @@
-const ForumCards = ({ header, body, comments }: any) => {
+interface ForumCardsProps {
+  header: string;
+  body: string;
+  comments: string;
+}
+
+const ForumCards = ({ header, body, comments }: ForumCardsProps) => {
   return (
     <div className="border-2 border-gray-300 px-6 py-3">
       <h1 className="text-custom-gold text-xl font-extrabold mb-3">{header}</h1>
