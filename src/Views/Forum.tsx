@@ -1,5 +1,5 @@
 import ForumHeader from "../Components/ForumHeader";
-import ForumCards from "../Components/ForumCards";
+import ForumCardsContainer from "../Components/ForumCardsContainer";
 
 const Forum = () => {
   return (
@@ -8,7 +8,7 @@ const Forum = () => {
         <ForumHeader />
       </div>
       <div style={{ height: "55vh" }} className="bg-custom-red">
-        <ForumCards />
+        <ForumCardsContainer />
       </div>
     </div>
   );
