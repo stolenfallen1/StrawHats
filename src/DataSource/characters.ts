@@ -30,8 +30,7 @@ export const characterArray = [
   {
     name: "Nami",
     image: nami,
-    description:
-      "Just one more time and everything will be the same. Everything will come back to me. And I will be free from Arlong. Bellemere-san. Finally, I can laugh with all my heart.",
+    description: "I hope.. Luffy will become become pirate king!!",
   },
   {
     name: "Usopp",

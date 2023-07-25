@@ -20,12 +20,18 @@ const CharacterList = ({
           isReverse ? "lg:flex-row-reverse" : "lg:flex-row"
         }`}
       >
-        <img src={image} />
+        <img
+          src={image}
+          className="lg:mt-0 md:mt-5 sm:mt-8 custom-400:mt-9 custom-300:mt-10"
+        />
         <div>
-          <h1 className="mb-5 text-white text-3xl font-extrabold italic">
+          <h1
+            className="lg:mt-0 md:mt-5 sm:mt-6 custom-400:mt-7 custom-300:mt-8 mb-5 text-white 
+          md:text-left sm:text-center custom-400:text-center custom-300:text-center text-3xl font-extrabold italic"
+          >
             {name}
           </h1>
-          <p className="text-custom-gold text-xl font-bold leading-10 lg:w-96 md:w-auto">
+          <p className="custom-styles text-custom-gold text-xl text-justify font-bold leading-10">
             {description}
           </p>
         </div>
