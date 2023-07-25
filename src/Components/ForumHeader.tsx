@@ -7,7 +7,7 @@ const ForumHeader = () => {
       <img
         className="brightness-50"
         src={ForumWallpaper}
-        style={{ height: "45vh", width: "100%" }}
+        style={{ height: "50vh", width: "100%" }}
       />
       <ForumHeaderLinks title="NAKAMA's Forum" />
     </div>

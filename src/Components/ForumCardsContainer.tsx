@@ -8,8 +8,8 @@ const cardData = [
 
 const ForumCardsContainer = () => {
   return (
-    <div className="pt-5">
-      <div className="flex justify-center items-center">
+    <div className="pt-2">
+      <div className="flex justify-center items-center md:flex-row sm:flex-col custom-400:flex-col custom-300:flex-col">
         {cardData.map((card, index) => (
           <ForumCards
             key={index}
