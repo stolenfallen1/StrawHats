@@ -7,7 +7,7 @@ interface ForumCardsProps {
 const ForumCards = ({ header, body, comments }: ForumCardsProps) => {
   return (
     <div
-      className="my-10 lg:mx-10 md:mx-5 flex flex-col items-center justify-center 
+      className="my-6 lg:mx-10 md:mx-5 flex flex-col items-center justify-center 
       border-2 border-gray-300 px-6 py-3 rounded-lg"
       style={{ width: "300px", height: "280px" }}
     >

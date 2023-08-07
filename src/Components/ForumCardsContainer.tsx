@@ -17,8 +17,15 @@ const ForumCardsContainer = () => {
 
   return (
     <div className="pt-2">
-      <button onClick={toggleModal}>Add Post</button>
-      {isModalOpen && <ModalForm onClose={toggleModal} />}
+      <div className="flex justify-center items-center">
+        <button
+          onClick={toggleModal}
+          className="py-2 px-4 mt-4 bg-black text-white rounded-md"
+        >
+          Add Post as Anonymous
+        </button>
+        {isModalOpen && <ModalForm onClose={toggleModal} />}
+      </div>
       <div className="flex justify-center items-center md:flex-row sm:flex-col custom-400:flex-col custom-300:flex-col">
         {cardData.map((card, index) => (
           <ForumCards
