@@ -1,4 +1,6 @@
+import { useState } from "react";
 import ForumCards from "./ForumCards";
+import ModalForm from "./ModalForm";
 
 const cardData = [
   { header: "Header 1", body: "Body 1", comments: "Comments 1" },
@@ -7,8 +9,16 @@ const cardData = [
 ];
 
 const ForumCardsContainer = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen);
+  };
+
   return (
     <div className="pt-2">
+      <button onClick={toggleModal}>Add Post</button>
+      {isModalOpen && <ModalForm onClose={toggleModal} />}
       <div className="flex justify-center items-center md:flex-row sm:flex-col custom-400:flex-col custom-300:flex-col">
         {cardData.map((card, index) => (
           <ForumCards
